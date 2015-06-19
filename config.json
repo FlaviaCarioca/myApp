@@ -1,0 +1,9 @@
+{
+  "development":{
+    "host": "blah"
+  },
+
+   "production":{
+     "host": "prod"
+   }
+}
