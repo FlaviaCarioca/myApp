@@ -1,11 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var userRoutes = require('./userRoutesFunctions');
 
 /* GET users listing. */
-router.get('/', userRoutes['/'].fn);
+router.get('/', function(req, res){
+  var users = ['John', 'Betty', 'Hal'];
+  res.json(users);
+});
 
-router.get('/new', userRoutes['/new'].fn);
+router.get('/new', function(req, res){
+  var users = ['John'];
+  res.json(users);
+});
 
 
 module.exports = router;
